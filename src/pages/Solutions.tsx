@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Layout from '@/components/Layout';
@@ -7,6 +6,10 @@ import SectionHeading from '@/components/SectionHeading';
 import TestimonialCard from '@/components/TestimonialCard';
 import { services } from '@/data/services';
 import { testimonials } from '@/data/testimonials';
+import BoxImage from '@/assets/Box.png';
+import DustImage from '@/assets/Dust.png';
+import BagsImage from '@/assets/Bags.png';
+import ShipImage from '@/assets/Ship.png';
 
 const SolutionsPage = () => {
   const location = useLocation();
@@ -50,7 +53,15 @@ const SolutionsPage = () => {
                 <div className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12`}>
                   <div className="lg:w-1/2">
                     <img 
-                      src={`https://source.unsplash.com/random/800x600?packaging,${service.id}`} 
+                      src={
+                        service.title === 'Custom Shipping Packaging' 
+                          ? ShipImage 
+                          : index === 0 
+                          ? BoxImage 
+                          : index === 1 
+                          ? DustImage 
+                          : BagsImage
+                      }
                       alt={service.title} 
                       className="rounded-lg shadow-lg w-full h-96 object-cover"
                     />
@@ -81,7 +92,7 @@ const SolutionsPage = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+     /* {/* Testimonials Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <SectionHeading 

@@ -19,14 +19,7 @@ const Footer = () => {
             <p className="text-gray-300 mt-4">
               Professional packaging solutions provider specializing in high-quality packaging, cutting-edge technology, and exceptional customer service.
             </p>
-            <div className="flex space-x-4 mt-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white hover:text-ridge-gold transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white hover:text-ridge-gold transition-colors">
-                <Instagram size={20} />
-              </a>
-            </div>
+   
           </div>
 
           {/* Quick Links */}
@@ -59,21 +52,21 @@ const Footer = () => {
                 <MapPin size={18} className="mr-2 mt-1 text-ridge-gold" />
                 <div>
                   <p className="font-semibold">Phoenix</p>
-                  <p className="text-gray-300 text-sm">123 Desert Rd, Phoenix, AZ</p>
+                  <p className="text-gray-300 text-sm">2636 S Wilson St, Suite 104, Tempe, AZ 85282</p>
                 </div>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-ridge-gold" />
                 <div>
                   <p className="font-semibold">Brooklyn</p>
-                  <p className="text-gray-300 text-sm">456 Urban St, Brooklyn, NY</p>
+                  <p className="text-gray-300 text-sm">14 53rd St, 6th & 7th Floors, Brooklyn, NY 11232​</p>
                 </div>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-ridge-gold" />
                 <div>
                   <p className="font-semibold">Salt Lake City</p>
-                  <p className="text-gray-300 text-sm">789 Mountain Ave, SLC, UT</p>
+                  <p className="text-gray-300 text-sm">1580 S 500 W, Suite 100, Salt Lake City, UT 8411</p>
                 </div>
               </li>
             </ul>
@@ -86,7 +79,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-ridge-gold" />
                 <a href="tel:+18001234567" className="text-gray-300 hover:text-ridge-gold transition-colors">
-                  (800) 123-4567
+                  (702) 817-4778
                 </a>
               </li>
               <li className="flex items-center">

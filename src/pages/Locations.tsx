@@ -1,8 +1,34 @@
-
 import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
 import LocationCard from '@/components/LocationCard';
-import { locations } from '@/data/locations';
+// Removed previous import of { locations } from '@/data/locations'
+// and replaced with updated location data
+const locations = [
+  {
+    id: 'phoenix',
+    city: 'Phoenix',
+    address: '2636 S Wilson St, Suite 104, Tempe, AZ 85282',
+    phone: '(702) 817-4778',
+    email: 'info@ridgevalley.co',
+    hours: 'Mon-Fri: 8am - 4pm'
+  },
+  {
+    id: 'brooklyn',
+    city: 'Brooklyn',
+    address: '14 53rd St, 6th & 7th Floors, Brooklyn, NY 11232',
+    phone: '(702) 817-4778',
+    email: 'info@ridgevalley.co',
+    hours: 'Mon-Fri: 8am - 4pm'
+  },
+  {
+    id: 'saltlakecity',
+    city: 'Salt Lake City',
+    address: '1580 S 500 W, Suite 100, Salt Lake City, UT 8411',
+    phone: '(702) 817-4778',
+    email: 'info@ridgevalley.co',
+    hours: 'Mon-Fri: 8am - 4pm'
+  }
+];
 
 const LocationsPage = () => {
   return (
@@ -18,7 +44,7 @@ const LocationsPage = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <iframe
               title="Ridge Valley Co Locations"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12614077.171742654!2d-104.65616064152886!3d39.553097639344945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sus!4v1649299283542!5m2!1sen!2sus"
+              src="https://www.google.com/maps/d/embed?mid=19aKIsAj5_YFQntin6C3KTIOd-L8LNaI&ehbc=2E312F"
               width="100%"
               height="450"
               style={{ border: 0 }}

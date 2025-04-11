@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import SectionHeading from '@/components/SectionHeading';
@@ -6,6 +5,8 @@ import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
 import { services } from '@/data/services';
 import { ArrowRight } from 'lucide-react';
+import HeroImage from '@/assets/Hero.png';
+
 
 const HomePage = () => {
   return (
@@ -20,27 +21,39 @@ const HomePage = () => {
             }}
           ></div>
         </div>
-        
+
         <div className="container-custom relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Simplify Your Operation with Professional Packaging Solutions
-            </h1>
-            <p className="text-xl mb-8 text-gray-200">
-              Streamline your shipping and packaging processes with Ridge Valley Co's comprehensive range of packaging solutions.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button asChild className="btn-primary">
-                <Link to="/solutions">Explore Solutions</Link>
-              </Button>
-              <Button asChild className="bg-white text-ridge-black hover:bg-gray-200 transition-colors font-montserrat uppercase font-bold py-3 px-6 rounded">
-                <Link to="/contact">Contact Us</Link>
-              </Button>
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+            {/* Text Content */}
+            <div className="lg:w-1/2">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Simplify Your Operation with Professional Packaging Solutions
+              </h1>
+              <p className="text-xl mb-8 text-gray-200">
+                Streamline your shipping and packaging processes with Ridge Valley Co's comprehensive range of packaging solutions.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Button asChild className="btn-primary">
+                  <Link to="/solutions">Explore Solutions</Link>
+                </Button>
+                <Button asChild className="bg-white text-ridge-black hover:bg-gray-200 transition-colors font-montserrat uppercase font-bold py-3 px-6 rounded">
+                  <Link to="/contact">Contact Us</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="lg:w-1/2">
+              <img 
+                src=  {HeroImage} 
+                alt="Anton the Giraffe - Ridge Valley Hero" 
+                className="w-full max-w-md mx-auto rounded-xl shadow-xl"
+              />
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Introduction Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
@@ -69,7 +82,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Services Section */}
       <section className="section-padding">
         <div className="container-custom">
@@ -78,7 +91,7 @@ const HomePage = () => {
             subtitle="We offer a comprehensive range of packaging solutions to meet your business needs."
             center
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
               <ServiceCard
@@ -90,7 +103,7 @@ const HomePage = () => {
               />
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Button asChild className="btn-primary">
               <Link to="/solutions">Learn More About Our Solutions</Link>
@@ -98,7 +111,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-24 bg-ridge-gold/10">
         <div className="container-custom text-center">

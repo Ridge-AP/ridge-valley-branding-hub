@@ -1,8 +1,7 @@
 import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
 import LocationCard from '@/components/LocationCard';
-// Removed previous import of { locations } from '@/data/locations'
-// and replaced with updated location data
+// Replaced the old static import of locations with updated inline data
 const locations = [
   {
     id: 'phoenix',
@@ -33,30 +32,33 @@ const locations = [
 const LocationsPage = () => {
   return (
     <Layout>
+      {/* Header section displaying the page title and description */}
       <PageHeader 
         title="Our Locations" 
         subtitle="Ridge Valley Co has three convenient locations to serve you across the United States."
       />
       
-      {/* Map Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="container-custom">
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <iframe
-              title="Ridge Valley Co Locations"
-              src="https://www.google.com/maps/d/embed?mid=19aKIsAj5_YFQntin6C3KTIOd-L8LNaI&ehbc=2E312F"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-      
-      {/* Locations Section */}
+{/*
+  Map Section - Displays an embedded Google Map with Ridge Valley locations
+  <section className="py-12 bg-gray-50">
+    <div className="container-custom">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <iframe
+          title="Ridge Valley Co Locations"
+          src="https://www.google.com/maps/d/embed?mid=19aKIsAj5_YFQntin6C3KTIOd-L8LNaI&ehbc=2E312F"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+*/}
+
+      {/* Locations Section - Displays individual cards for each location */}
       <section className="section-padding">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -74,7 +76,7 @@ const LocationsPage = () => {
         </div>
       </section>
       
-      {/* National Coverage Section */}
+      {/* National Coverage Section - Highlights service capabilities */}
       <section className="section-padding bg-ridge-gold/10">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">

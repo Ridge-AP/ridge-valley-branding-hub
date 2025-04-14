@@ -5,7 +5,7 @@ import PageHeader from '@/components/PageHeader';
 import SectionHeading from '@/components/SectionHeading';
 import TestimonialCard from '@/components/TestimonialCard';
 import { services } from '@/data/services';
-import { testimonials } from '@/data/testimonials';
+// import { testimonials } from '@/data/testimonials'; // Commented out
 import BoxImage from '@/assets/Box.png';
 import DustImage from '@/assets/Dust.png';
 import BagsImage from '@/assets/Bags.png';
@@ -13,7 +13,7 @@ import ShipImage from '@/assets/Ship.png';
 
 const SolutionsPage = () => {
   const location = useLocation();
-  
+
   useEffect(() => {
     // Handle hash navigation
     if (location.hash) {
@@ -92,7 +92,9 @@ const SolutionsPage = () => {
         </div>
       </section>
       
-     /* {/* Testimonials Section */}
+      {/*
+      {/* Testimonials Section */}
+      {/* 
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <SectionHeading 
@@ -113,6 +115,7 @@ const SolutionsPage = () => {
           </div>
         </div>
       </section>
+      */}
     </Layout>
   );
 };

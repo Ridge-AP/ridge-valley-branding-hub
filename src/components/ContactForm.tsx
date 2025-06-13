@@ -45,7 +45,14 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <div className="space-y-6">
+      <div className="bg-ridge-gold/10 border border-ridge-gold/20 rounded-lg p-4">
+        <p className="text-sm text-gray-700 font-medium">
+          <strong>Notice:</strong> This form is for serious business inquiries only. Please ensure your message is professional and specific to your packaging needs.
+        </p>
+      </div>
+      
+      <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="name">Name</Label>
@@ -103,6 +110,7 @@ const ContactForm = () => {
         {isSubmitting ? 'Sending...' : 'Send Message'}
       </Button>
     </form>
+    </div>
   );
 };
 

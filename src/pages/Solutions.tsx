@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
 import SectionHeading from '@/components/SectionHeading';
 import TestimonialCard from '@/components/TestimonialCard';
+import { Button } from '@/components/ui/button';
 import { services } from '@/data/services';
 // import { testimonials } from '@/data/testimonials'; // Commented out
 import BoxImage from '@/assets/Box.png';
@@ -116,6 +117,19 @@ const SolutionsPage = () => {
         </div>
       </section>
       */}
+      
+      {/* Products CTA Section */}
+      <section className="section-padding bg-ridge-black text-white">
+        <div className="container-custom text-center">
+          <h2 className="text-3xl font-bold mb-8">Ready to Find Your Perfect Packaging?</h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            Discover our comprehensive range of packaging solutions designed to meet your exact needs.
+          </p>
+          <Button asChild className="btn-primary text-lg px-8 py-4">
+            <Link to="/products">Checkout our Products!</Link>
+          </Button>
+        </div>
+      </section>
     </Layout>
   );
 };

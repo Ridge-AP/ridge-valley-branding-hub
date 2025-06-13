@@ -70,12 +70,12 @@ const HomePage = () => {
               <div className="w-20 h-20 rounded-full bg-ridge-gold/10 flex items-center justify-center mb-8">
                 <Users className="text-ridge-gold w-10 h-10" />
               </div>
-              <h2 className="text-4xl font-bold mb-8">Where Exceptional Minds Thrive</h2>
+              <h2 className="text-4xl font-bold mb-8">Our Mission</h2>
               <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                At Ridge Valley Co, we don't just hire employees—we cultivate visionaries. Our team of innovators, engineers, and strategic thinkers are reshaping entire industries from our hubs in Phoenix, Brooklyn, and Salt Lake City.
+                At Ridge Valley Co, we're building more than a company—we're creating a movement. Our mission is to empower ambitious professionals to redefine what's possible in commerce through innovation, technology, and relentless execution.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                We believe that extraordinary companies are built by extraordinary people who dare to challenge conventions and push boundaries.
+                We seek individuals who thrive in dynamic environments, who see challenges as opportunities, and who believe that the future belongs to those bold enough to create it.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">
@@ -92,8 +92,8 @@ const HomePage = () => {
                 </div>
               </div>
               <Button asChild className="btn-secondary text-lg">
-                <Link to="/careers" className="flex items-center">
-                  Explore Opportunities <ArrowRight className="ml-2 h-5 w-5" />
+                <Link to="/contact" className="flex items-center">
+                  Join Our Mission <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>

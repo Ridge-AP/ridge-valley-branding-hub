@@ -187,7 +187,7 @@ const HomePage = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild className="btn-secondary">
-                  <Link to="/solutions">Our Solutions</Link>
+                  <Link to="/solutions">Our Products</Link>
                 </Button>
                 <Button asChild className="bg-gray-100 text-ridge-black hover:bg-gray-200 transition-colors font-montserrat uppercase font-bold py-3 px-6 rounded">
                   <Link to="/locations">Our Locations</Link>

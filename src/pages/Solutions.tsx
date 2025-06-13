@@ -54,8 +54,8 @@ const SolutionsPage = () => {
             <div className="bg-white rounded-2xl shadow-xl border overflow-hidden">
               <div className="w-full h-64 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/14375116-a3d5-460c-9fbd-cbfe700f0099.png" 
-                  alt="Custom printed shipping boxes with branding" 
+                  src="/lovable-uploads/c290e55b-6a0d-4c9b-898d-4ee7049ee626.png" 
+                  alt="Custom shipping packaging in warehouse setting" 
                   className="w-full h-full object-cover"
                 />
               </div>

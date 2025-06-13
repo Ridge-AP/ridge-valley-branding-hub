@@ -24,8 +24,8 @@ const StockProductsPage = () => {
               {/* Image - Left Side */}
               <div className="w-full h-96 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=5000&h=3333&auto=format&fit=crop"
-                  alt="Warehouse with stocked inventory and packaging supplies" 
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=5000&h=3333&auto=format&fit=crop"
+                  alt="Stacked corrugated shipping boxes ready for delivery" 
                   className="w-full h-full object-cover"
                 />
               </div>

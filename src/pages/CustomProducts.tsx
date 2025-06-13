@@ -24,8 +24,8 @@ const CustomProductsPage = () => {
               {/* Image - Left Side */}
               <div className="w-full h-96 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=5000&h=3333&auto=format&fit=crop"
-                  alt="Custom packaging design and branding process" 
+                  src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?q=80&w=5000&h=3333&auto=format&fit=crop"
+                  alt="Custom branded packaging boxes with unique designs" 
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -24,8 +24,8 @@ const StockProductsPage = () => {
               {/* Image - Left Side */}
               <div className="w-full h-96 rounded-lg overflow-hidden">
                 <img 
-                  src="/lovable-uploads/4aba2951-9efb-4fc4-bbe4-2f4878d3d2d4.png"
-                  alt="Simple generic cardboard shipping box"
+                  src="/lovable-uploads/7d4b0f1d-581d-45f8-86cc-08b66b66f65b.png"
+                  alt="Brown cardboard boxes stacked in a warehouse setting"
                   className="w-full h-full object-cover"
                 />
               </div>

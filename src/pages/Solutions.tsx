@@ -27,7 +27,7 @@ const SolutionsPage = () => {
               
               <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" 
+                  src="/lovable-uploads/f02c5d7f-1532-43b6-bc1d-8bf10b3b2e0f.png" 
                   alt="Stock packaging products" 
                   className="w-full h-full object-cover"
                 />
@@ -60,7 +60,7 @@ const SolutionsPage = () => {
               
               <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" 
+                  src="/lovable-uploads/0a0fba3e-06a0-464d-b417-ea277ef018ee.png" 
                   alt="Custom packaging solutions" 
                   className="w-full h-full object-cover"
                 />

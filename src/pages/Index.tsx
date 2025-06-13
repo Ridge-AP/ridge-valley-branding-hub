@@ -35,10 +35,7 @@ const HomePage = () => {
               </p>
               <div className="flex flex-wrap gap-6">
                 <Button asChild className="btn-primary text-lg px-8 py-4">
-                  <Link to="/careers">Join Our Mission</Link>
-                </Button>
-                <Button asChild className="bg-white text-ridge-black hover:bg-gray-200 transition-colors font-montserrat uppercase font-bold py-4 px-8 rounded text-lg">
-                  <Link to="/technology">Our Technology</Link>
+                  <Link to="/contact">Join Our Mission</Link>
                 </Button>
               </div>
             </div>
@@ -141,54 +138,34 @@ const HomePage = () => {
                   <p className="text-gray-300">Scalable infrastructure for unlimited growth</p>
                 </div>
               </div>
-              <Button asChild className="btn-primary text-lg">
-                <Link to="/technology" className="flex items-center">
-                  Explore Our Tech Stack <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Entrepreneurship & Future Section - 20% */}
-      <section className="section-padding bg-gradient-to-br from-ridge-gold/10 to-ridge-gold/5">
-        <div className="container-custom text-center">
-          <div className="w-20 h-20 rounded-full bg-ridge-gold/20 flex items-center justify-center mb-8 mx-auto">
-            <TrendingUp className="text-ridge-gold w-10 h-10" />
-          </div>
-          <SectionHeading 
-            title="Shaping Tomorrow's Economy" 
-            subtitle="We don't follow trends—we create them. Ridge Valley Co is building the infrastructure for the next generation of commerce."
-            center
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-ridge-gold mb-4">$50M+</div>
-              <div className="text-xl font-bold mb-2">Revenue Growth</div>
-              <p className="text-gray-600">Projected over the next 24 months through innovation</p>
+      {/* Investor Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="lg:w-1/2">
+              <img 
+                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Modern investment and financial growth" 
+                className="rounded-2xl shadow-xl w-full object-cover h-[400px]"
+              />
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-ridge-gold mb-4">3x</div>
-              <div className="text-xl font-bold mb-2">Market Expansion</div>
-              <p className="text-gray-600">Aggressive scaling across North American markets</p>
+            <div className="lg:w-1/2">
+              <div className="w-20 h-20 rounded-full bg-ridge-gold/10 flex items-center justify-center mb-8">
+                <TrendingUp className="text-ridge-gold w-10 h-10" />
+              </div>
+              <h2 className="text-4xl font-bold mb-8">Investment Opportunities</h2>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Ridge Valley Co represents a unique opportunity to invest in the future of commerce. We're actively seeking strategic partners and investors who share our vision of revolutionizing distribution through technology, exceptional execution, and unprecedented growth potential.
+              </p>
+              <Button asChild className="btn-primary text-lg px-8 py-4">
+                <Link to="/investor-portal">Access Investor Portal</Link>
+              </Button>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-ridge-gold mb-4">100+</div>
-              <div className="text-xl font-bold mb-2">Visionary Team</div>
-              <p className="text-gray-600">Exceptional talent driving unprecedented growth</p>
-            </div>
-          </div>
-
-          <div className="mt-16">
-            <h3 className="text-2xl font-bold mb-8">Investment Opportunities</h3>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-8">
-              We're actively seeking strategic partners and investors who share our vision of revolutionizing commerce through technology and exceptional execution. Join us in building the future.
-            </p>
-            <Button asChild className="btn-primary text-lg">
-              <Link to="/investors">Partner With Us</Link>
-            </Button>
           </div>
         </div>
       </section>
@@ -237,7 +214,7 @@ const HomePage = () => {
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
             <Button asChild className="btn-primary text-lg px-8 py-4">
-              <Link to="/careers">Join Our Team</Link>
+              <Link to="/contact">Join Our Team</Link>
             </Button>
             <Button asChild className="bg-white text-ridge-black hover:bg-gray-200 transition-colors font-montserrat uppercase font-bold py-4 px-8 rounded text-lg">
               <Link to="/contact">Start a Conversation</Link>

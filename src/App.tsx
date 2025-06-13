@@ -12,6 +12,7 @@ import StockProducts from "./pages/StockProducts";
 import CustomProducts from "./pages/CustomProducts";
 import Locations from "./pages/Locations";
 import Contact from "./pages/Contact";
+import InvestorPortal from "./pages/InvestorPortal";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/custom-products" element={<CustomProducts />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/investor-portal" element={<InvestorPortal />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

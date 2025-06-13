@@ -25,12 +25,11 @@ const SolutionsPage = () => {
               
               <h2 className="text-3xl font-bold mb-4 text-center">Stock Products</h2>
               
-              {/* Image */}
-              <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="/src/assets/Box.png" 
+                  src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" 
                   alt="Stock packaging products" 
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover"
                 />
               </div>
               
@@ -59,12 +58,11 @@ const SolutionsPage = () => {
               
               <h2 className="text-3xl font-bold mb-4 text-center">Custom Products</h2>
               
-              {/* Image */}
-              <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="/src/assets/Bags.png" 
+                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" 
                   alt="Custom packaging solutions" 
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover"
                 />
               </div>
               
